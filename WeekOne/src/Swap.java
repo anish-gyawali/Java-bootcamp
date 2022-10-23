@@ -9,7 +9,7 @@ public class Swap {
 		System.out.println("a= "+ " "+a+" "+ "b= "+b);
 		
 		int temp=0;
-		temp=a;
+		temp=a; 
 		a=b;
 		b=temp;
 		System.out.println("After swapping");
