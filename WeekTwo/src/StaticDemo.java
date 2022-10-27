@@ -1,22 +1,4 @@
-/*
- ) Static varibles and Method can access directly From Static Methods
-note:  without creating Object we can access.
-
-
-
-2) Static varibles and Method can access Using ClassName from Static Static Methods
-    eg:   class Employee{  static int eno=100; p.s.v.m(s[]args){  s.o.p(Employee.eno);
-
-
-
-3)Static varibles and Method can access Creating Object from Static Methods
-
-
-
-4)Static varibles and Method can access Directly from Non-static Methods
-5)Referece Varible once have a null, we can access Static varibles and Method can access Using Referece varible,
- */
-
+//simple flow and use of static variable
 public class StaticDemo {
 	
 		static int i =100;
@@ -26,12 +8,24 @@ public class StaticDemo {
 		}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+	
+		/*Static variables and Method can access directly From Static Method*/
 		System.out.println("Directly"+i);
 		display();
 		
-		System.out.println("Access static vaibale using className"+StaticDemo.i);
+		/*Static variables and Method can access Using ClassName from Static Methods*/
+		System.out.println("Access static varibale using className"+StaticDemo.i);
 		StaticDemo.display();
+		
+		/*Static variables and Method can access Creating Object from Static Methods*/
+		StaticDemo demo= new StaticDemo();
+		System.out.println("Access static variable by creating object"+demo.i);
+		demo.display();
+		
+		/*Reference variable once have a null, we can access Static variables and Method can access Using Reference variable*/
+		StaticDemo demo1= null;
+		System.out.println("we can access Static varibles if Referece Varible is null"+demo.i);
+		demo1.display();
 	}
 
 }
