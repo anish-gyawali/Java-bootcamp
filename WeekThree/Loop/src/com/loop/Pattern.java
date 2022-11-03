@@ -83,7 +83,9 @@ public class Pattern {
 		
 		int a=0;
 		for(int b=0;b<10;++b) {
-			for(int c=0;c<5;++c) {	
+			for(int c=0;c<5;++c) {
+				
+				if(a!=0)
 				if(a<=100)
 				System.out.print(a+" ");
 				a=a+5;	
