@@ -1,6 +1,6 @@
 /* example for use of "switch*/
 /*
- Switch accepts the arguments (byte, string, short) check the multiple conditions 
+ Switch accepts the arguments (byte, string, short) check the multiple conditions. 
  */
 
 package com.switchEx;
