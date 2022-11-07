@@ -1,5 +1,6 @@
 /*
 write a program to print following pattern
+
 	246810
 	------
 	---up to 50
